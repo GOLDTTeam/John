@@ -1729,7 +1729,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = 'قناة السورس', url='https://t.me/trprogram'},
+{text = 'قناة السورس', url='https://t.me/N00NN0'},
 },
 }
 }
@@ -1753,7 +1753,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = 'قناة السورس', url='https://t.me/trprogram'},
+{text = 'قناة السورس', url='https://t.me/N00NN0'},
 },
 }
 }
@@ -1890,7 +1890,7 @@ data = {
 {text = '', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url='https://t.me/trprogram'},
+{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url='https://t.me/N00NN0'},
 },
 }
 }
@@ -2084,7 +2084,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = 'قناة السورس', url='https://t.me/trprogram'},
+{text = 'قناة السورس', url='https://t.me/N00NN0'},
 },
 }
 }
@@ -4332,7 +4332,7 @@ data = {
 {text = '- الغاء الامر', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = 'قناة السورس', url='https://t.me/trprogram'},
+{text = 'قناة السورس', url='https://t.me/N00NN0'},
 },
 }
 }
@@ -4780,7 +4780,7 @@ local Text ='- تم اختيار الاغنيه'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'قناة السورس',url="t.me/trprogram"}
+{text = 'قناة السورس',url="t.me/N00NN0"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4792,7 +4792,7 @@ local Text ='- تم اختيار قران'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = 'قناة السورس',url="t.me/trprogram"}
+{text = 'قناة السورس',url="t.me/N00NN0"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4804,7 +4804,7 @@ local Text ='- تم اختيار جداريات'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/trprogram"}
+{text = 'قناة السورس', url = "https://t.me/N00NN0"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4816,7 +4816,7 @@ local Text ='- تم اختيار افتار عيال'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/trprogram"}
+{text = 'قناة السورس', url = "https://t.me/N00NN0"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4828,7 +4828,7 @@ local Text ='- تم اختيار هيدرات'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/trprogram"}
+{text = 'قناة السورس', url = "https://t.me/N00NN0"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4840,7 +4840,7 @@ local Text ='- تم اختيار افتار بنات'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/trprogram"}
+{text = 'قناة السورس', url = "https://t.me/N00NN0"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4852,7 +4852,7 @@ local Text ='- تم اختيار افتار رسم'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/trprogram"}
+{text = 'قناة السورس', url = "https://t.me/N00NN0"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4864,7 +4864,7 @@ local Text ='- تم اختيار افتار فكتوري'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/trprogram"}
+{text = 'قناة السورس', url = "https://t.me/N00NN0"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4876,7 +4876,7 @@ local Text ='- تم اختيار افتار السينمائي'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/trprogram"}
+{text = 'قناة السورس', url = "https://t.me/N00NN0"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4888,7 +4888,7 @@ local Text ='- تم اختيار اقتباس'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/trprogram"}
+{text = 'قناة السورس', url = "https://t.me/N00NN0"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4900,7 +4900,7 @@ local Text ='- تم اختيار عباره'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/trprogram"}
+{text = 'قناة السورس', url = "https://t.me/N00NN0"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4912,7 +4912,7 @@ local Text ='- تم اختيار افتار كيبوب'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/trprogram"}
+{text = 'قناة السورس', url = "https://t.me/N00NN0"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4924,7 +4924,7 @@ local Text ='- تم اختيار افتار انمي'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/trprogram"}
+{text = 'قناة السورس', url = "https://t.me/N00NN0"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -4936,7 +4936,7 @@ local Text ='- تم اختيار افتار فنانين'
 keyboardd = {} 
 keyboardd.inline_keyboard = {
 {
-{text = 'قناة السورس', url = "https://t.me/trprogram"}
+{text = 'قناة السورس', url = "https://t.me/N00NN0"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -5039,28 +5039,28 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '❲ 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓🎖 ❳', url = "https://t.me/trprogram"}
+{text = '❲ 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓🎖 ❳', url = "https://t.me/N00NN0"}
 },
 {
-{text = '- TRAKOS .', url = "https://t.me/TTRAKOS"}
+{text = '- ARMANDO .', url = "https://t.me/iiiziiii"}
 },
 }
 }
-return LuaTele.sendText(msg_chat_id,msg_id,"[ReBack Source .](t.me/trprogram)\n\n[سورس ريباك ،](t.me/trprogram)","md",true, false, false, false,reply_markup)
+return LuaTele.sendText(msg_chat_id,msg_id,"[Toky Source .](t.me/N00NN0)\n\n[سورس توكي ،](t.me/N00NN0)","md",true, false, false, false,reply_markup)
 end
 if text == 'المطور' or text == 'مطور' or text == 'يامطور' or text == 'يا مطور' then
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '❲ 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓🎖 ❳', url = "https://t.me/trprogram"}
+{text = '❲ 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓🎖 ❳', url = "https://t.me/N00NN0"}
 },
 {
-{text = '- TRAKOS .', url = "https://t.me/TTRAKOS"}
+{text = '- ARMANDO .', url = "https://t.me/iiiziiii"}
 },
 }
 }
-return LuaTele.sendText(msg_chat_id,msg_id,"[ReBack Source .](t.me/trprogram)\n\n[سورس ريباك ،](t.me/trprogram)","md",true, false, false, false,reply_markup)
+return LuaTele.sendText(msg_chat_id,msg_id,"[Toky Source .](t.me/N00NN0)\n\n[سورس توكي ،](t.me/N00NN0)","md",true, false, false, false,reply_markup)
 end
 if text == 'تعطيل التحقق' then
 if not msg.Addictive then
@@ -8547,7 +8547,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '- قناة السورس', url = 't.me/trprogram'}, 
+{text = '- قناة السورس', url = 't.me/N00NN0'}, 
 },
 }
 }
@@ -9926,7 +9926,7 @@ data = {
 {text = 'اوامر القفل / الفتح', data = msg.sender.user_id..'/NoNextSeting'}, {text = 'اوامر التعطيل / التفعيل', data = msg.sender.user_id..'/listallAddorrem'}, 
 },
 {
-{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url = 't.me/trprogram'}, 
+{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url = 't.me/N00NN0'}, 
 },
 }
 }
@@ -9957,7 +9957,7 @@ data = {
 {text = ' قائمه الاوامر ', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/trprogram'}, 
+{text = '- قناة السورس', url = 't.me/N00NN0'}, 
 },
 }
 }
@@ -9977,7 +9977,7 @@ data = {
 {text = ' قائمه الاوامر ', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/trprogram'}, 
+{text = '- قناة السورس', url = 't.me/N00NN0'}, 
 },
 }
 }
@@ -9997,7 +9997,7 @@ data = {
 {text = ' قائمه الاوامر ', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/trprogram'}, 
+{text = '- قناة السورس', url = 't.me/N00NN0'}, 
 },
 }
 }
@@ -10017,7 +10017,7 @@ data = {
 {text = ' قائمه الاوامر ', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/trprogram'}, 
+{text = '- قناة السورس', url = 't.me/N00NN0'}, 
 },
 }
 }
@@ -10037,7 +10037,7 @@ data = {
 {text = ' قائمه الاوامر ', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/trprogram'}, 
+{text = '- قناة السورس', url = 't.me/N00NN0'}, 
 },
 }
 }
@@ -10057,7 +10057,7 @@ data = {
 {text = ' قائمه الاوامر ', data = msg.sender.user_id..'/helpall'},
 },
 {
-{text = '- قناة السورس', url = 't.me/trprogram'}, 
+{text = '- قناة السورس', url = 't.me/N00NN0'}, 
 },
 }
 }
@@ -11185,10 +11185,10 @@ return LuaTele.sendText(msg_chat_id,msg_id,'\n- الامر يخص ( '..Controlle
 end
     K = 'المالك'
     F = '1000000000000000000'
-    trakos = "Was Die . - المالك"
+    ARMANDO = "Was Die . - المالك"
 Redis:incrby(FDFGERB.."nool:flotysb"..msg.sender.user_id , F)
 local ballancee = Redis:get(FDFGERB.."nool:flotysb"..msg.sender.user_id) or 0
-local teex = "اشعار ايداع "..trakos.."\nالمبلغ : "..F.." بتكوين 🪙\nوظيفتك : مالك البوت وعلى راسي \nنوع العملية : اضافة الاستحقاق\nرصيدك الآن : "..ballancee.." بتكوين 🪙"
+local teex = "اشعار ايداع "..ARMANDO.."\nالمبلغ : "..F.." بتكوين 🪙\nوظيفتك : مالك البوت وعلى راسي \nنوع العملية : اضافة الاستحقاق\nرصيدك الآن : "..ballancee.." بتكوين 🪙"
 LuaTele.sendText(msg.chat_id,msg.id,teex,"md",true)
 Redis:setex(FDFGERB.."innoo" .. msg.sender.user_id,600, true)
 end
@@ -11935,7 +11935,7 @@ data = {
 {text = 'ضيفني لـ مجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = 'تحديثات لبوت', url = 't.me/trprogram'}, 
+{text = 'تحديثات لبوت', url = 't.me/N00NN0'}, 
 },
 }
 }
@@ -11948,7 +11948,7 @@ data = {
 {text = 'ضيفني لـ مجموعتك', url = 't.me/'..UserBot..'?startgroup=new'}, 
 },
 {
-{text = 'تحديثات لبوت', url = 't.me/trprogram'}, 
+{text = 'تحديثات لبوت', url = 't.me/N00NN0'}, 
 },
 }
 }
@@ -12019,7 +12019,7 @@ data = {
 },
 }
 }
-return LuaTele.sendText(msg_chat_id,msg_id,'- اهلا بك عزيزي Dev 🎖\n- يمكنك التحكم بكل الاوامر الموجودة\n- فقط اضغط على الامر\n- اذا كنت تريد الغاء الامر اضغط على الغاء الامر\n- قناه السورس ↤ [قناة السورس](t.me/trprogram)', 'md', false, false, false, false, reply_markup)
+return LuaTele.sendText(msg_chat_id,msg_id,'- اهلا بك عزيزي Dev 🎖\n- يمكنك التحكم بكل الاوامر الموجودة\n- فقط اضغط على الامر\n- اذا كنت تريد الغاء الامر اضغط على الغاء الامر\n- قناه السورس ↤ [قناة السورس](t.me/N00NN0)', 'md', false, false, false, false, reply_markup)
 end
 end
 if text == 'تنظيف المشتركين' then
@@ -12887,7 +12887,7 @@ data = {
 {text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},
 },
 {
-{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url = 't.me/trprogram'}, 
+{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url = 't.me/N00NN0'}, 
 },
 }
 }
@@ -12975,7 +12975,7 @@ data = {
 {text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},
 },
 {
-{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url = 't.me/trprogram'}, 
+{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url = 't.me/N00NN0'}, 
 },
 }
 }
@@ -13025,7 +13025,7 @@ data = {
 {text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},
 },
 {
-{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url = 't.me/trprogram'}, 
+{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url = 't.me/N00NN0'}, 
 },
 }
 }
@@ -13092,7 +13092,7 @@ data = {
 {text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},
 },
 {
-{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url = 't.me/trprogram'}, 
+{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url = 't.me/N00NN0'}, 
 },
 }
 }
@@ -13135,7 +13135,7 @@ data = {
 {text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},
 },
 {
-{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url = 't.me/trprogram'}, 
+{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url = 't.me/N00NN0'}, 
 },
 }
 }
@@ -13180,7 +13180,7 @@ data = {
 {text = 'القائمه الرئيسيه', data = IdUser..'/helpall'},
 },
 {
-{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url = 't.me/trprogram'}, 
+{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url = 't.me/N00NN0'}, 
 },
 }
 }
@@ -13222,7 +13222,7 @@ data = {
 {text = 'اوامر القفل / الفتح', data = IdUser..'/NoNextSeting'}, {text = 'اوامر التعطيل / التفعيل', data = IdUser..'/listallAddorrem'}, 
 },
 {
-{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url = 't.me/trprogram'}, 
+{text = '𝑺𝒐𝒖𝒓𝒄𝒆', url = 't.me/N00NN0'}, 
 },
 }
 }
@@ -14078,7 +14078,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = "inline",
 data = {
 {
-{text = 'قناة السورس', url='https://t.me/trprogram'},
+{text = 'قناة السورس', url='https://t.me/N00NN0'},
 },
 }
 }
@@ -14126,7 +14126,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = "inline",
 data = {
 {
-{text = 'قناة السورس', url='https://t.me/trprogram'},
+{text = 'قناة السورس', url='https://t.me/N00NN0'},
 },
 }
 }
@@ -14196,7 +14196,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = "inline",
 data = {
 {
-{text = 'قناة السورس', url='https://t.me/trprogram'},
+{text = 'قناة السورس', url='https://t.me/N00NN0'},
 },
 }
 }
@@ -15240,6 +15240,7 @@ end
 end
 luatele.run(CallBackLua)
  
+
 
 
 
