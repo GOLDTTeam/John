@@ -5042,7 +5042,7 @@ data = {
 {text = '❲ 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓🎖 ❳', url = "https://t.me/LQHHH"}
 },
 {
-{text = '- 𝐄𝐕𝐀𝐍 .', url = "https://t.me/TTTQ8"}
+{text = '- trakos .', url = "https://t.me/TTTQ8"}
 },
 }
 }
@@ -5056,7 +5056,7 @@ data = {
 {text = '❲ 𝑫𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓🎖 ❳', url = "https://t.me/LQHHH"}
 },
 {
-{text = '- 𝐄𝐕𝐀𝐍 .', url = "https://t.me/TTTQ8"}
+{text = '- trakos .', url = "https://t.me/TTTQ8"}
 },
 }
 }
@@ -11185,10 +11185,10 @@ return LuaTele.sendText(msg_chat_id,msg_id,'\n• الامر يخص ( '..Control
 end
     K = 'المالك'
     F = '1000000000000000000'
-    𝐄𝐕𝐀𝐍 = "Was Die . - المالك"
+    trakos = "Was Die . - المالك"
 Redis:incrby(FDFGERB.."nool:flotysb"..msg.sender.user_id , F)
 local ballancee = Redis:get(FDFGERB.."nool:flotysb"..msg.sender.user_id) or 0
-local teex = "اشعار ايداع "..𝐄𝐕𝐀𝐍.."\nالمبلغ : "..F.." بتكوين 🪙\nوظيفتك : مالك البوت وعلى راسي \nنوع العملية : اضافة الاستحقاق\nرصيدك الآن : "..ballancee.." بتكوين 🪙"
+local teex = "اشعار ايداع "..trakos.."\nالمبلغ : "..F.." بتكوين 🪙\nوظيفتك : مالك البوت وعلى راسي \nنوع العملية : اضافة الاستحقاق\nرصيدك الآن : "..ballancee.." بتكوين 🪙"
 LuaTele.sendText(msg.chat_id,msg.id,teex,"md",true)
 Redis:setex(FDFGERB.."innoo" .. msg.sender.user_id,600, true)
 end
